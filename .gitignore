@@ -4,5 +4,5 @@ out
 *.log
 .env*
 *.tsbuildinfo
-/public/**/*.mp4
+/public/projects/ai-video/final/superme-final.mp4
 /tmphaoqi-*.png
