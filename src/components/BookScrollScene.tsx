@@ -45,8 +45,14 @@ export function BookScrollScene() {
       + root.getBoundingClientRect().top
       - scrollContainer.getBoundingClientRect().top;
 
+    // Mobile browsers can stop a smooth scroll right on a ScrollTrigger boundary,
+    // which leaves the previous book active. Land further inside the target range.
+    const targetOffset = window.matchMedia("(max-width: 720px)").matches
+      ? projectScrollStep * 0.82
+      : projectScrollStep / 2;
+
     scrollContainer.scrollTo({
-      top: rootTop + index * projectScrollStep + projectScrollStep / 2,
+      top: rootTop + index * projectScrollStep + targetOffset,
       behavior: "smooth",
     });
   };

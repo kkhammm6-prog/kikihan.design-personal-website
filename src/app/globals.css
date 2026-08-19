@@ -31,7 +31,7 @@ a { color: inherit; text-decoration: none; }
 .header-resource-trigger::after, .header-resource-menu button::after { content: ""; position: absolute; inset: 0; opacity: 0; background: linear-gradient(var(--paper),var(--paper)) left top / 10px 1px no-repeat, linear-gradient(var(--paper),var(--paper)) left top / 1px 10px no-repeat, linear-gradient(var(--paper),var(--paper)) right top / 10px 1px no-repeat, linear-gradient(var(--paper),var(--paper)) right top / 1px 10px no-repeat, linear-gradient(var(--paper),var(--paper)) left bottom / 10px 1px no-repeat, linear-gradient(var(--paper),var(--paper)) left bottom / 1px 10px no-repeat, linear-gradient(var(--paper),var(--paper)) right bottom / 10px 1px no-repeat, linear-gradient(var(--paper),var(--paper)) right bottom / 1px 10px no-repeat; transition: opacity .14s steps(2,end); pointer-events: none; }
 .header-resource-trigger:hover::after, .header-resource-trigger:focus-visible::after, .header-resource.is-open .header-resource-trigger::after, .header-resource-menu button:hover::after, .header-resource-menu button:focus-visible::after { opacity: 1; }
 .header-resource-trigger:focus-visible, .header-resource-menu button:focus-visible { outline: none; }
-.header-resource-menu { position: absolute; top: calc(100% - 5px); left: 0; display: grid; min-width: 7rem; padding: 4px; border: 1px solid rgba(244,241,234,.62); background: rgba(5,5,5,.94); opacity: 0; transform: translateY(-4px); visibility: hidden; transition: opacity .14s steps(2,end), transform .14s steps(2,end), visibility 0s linear .14s; }
+.header-resource-menu { position: absolute; top: calc(100% - 5px); left: 0; display: grid; min-width: 7rem; padding: 4px; border: 1px solid rgba(244,241,234,.62); background: #000; opacity: 0; transform: translateY(-4px); visibility: hidden; transition: opacity .14s steps(2,end), transform .14s steps(2,end), visibility 0s linear .14s; }
 .header-resource-menu button { padding: 10px 12px; text-align: left; }
 .header-resource.is-open .header-resource-menu { opacity: 1; transform: translateY(0); visibility: visible; transition-delay: 0s; }
 .site-header nav { display: flex; align-items: center; gap: 2px; margin-right: -12px; }
@@ -467,7 +467,7 @@ h1, h2 { margin-bottom: 0; font-size: clamp(3.6rem, 9.3vw, 10.2rem); line-height
   .header-mobile-menu-trigger:focus-visible,
   .header-mobile-resource-trigger:focus-visible,
   .header-mobile-language-menu button:focus-visible { outline: none; }
-  .header-mobile-resource-menu { position: absolute; top: calc(100% + 4px); left: -12px; display: grid; width: 11rem; padding: 4px; border: 1px solid rgba(244,241,234,.62); background: rgba(5,5,5,.94); opacity: 0; transform: translateY(-4px); visibility: hidden; transition: opacity .14s steps(2,end), transform .14s steps(2,end), visibility 0s linear .14s; }
+  .header-mobile-resource-menu { position: absolute; top: calc(100% + 4px); left: -12px; display: grid; width: 11rem; padding: 4px; border: 1px solid rgba(244,241,234,.62); background: #000; opacity: 0; transform: translateY(-4px); visibility: hidden; transition: opacity .14s steps(2,end), transform .14s steps(2,end), visibility 0s linear .14s; }
   .header-mobile-resource-menu.is-open { opacity: 1; transform: translateY(0); visibility: visible; transition-delay: 0s; }
   .header-mobile-resource { display: grid; grid-template-columns: 1fr auto; align-items: center; min-height: 44px; }
   .header-mobile-resource-trigger { justify-content: start; padding: 12px; text-align: left; }
@@ -555,7 +555,7 @@ h1, h2 { margin-bottom: 0; font-size: clamp(3.6rem, 9.3vw, 10.2rem); line-height
   .vibe-site-entry { min-height: 32rem; aspect-ratio: auto; }
   .vibe-site-entry img { object-position: 35% center; }
   .vibe-site-entry > span { right: 1rem; bottom: 1rem; opacity: 1; transform: none; }
-  .contact-hero { min-height: 34rem; padding: 0 1rem 1rem; }
+  .contact-hero { min-height: 34rem; margin-top: 0; padding: 0 1rem 1rem; }
   .contact-hero::before { inset: 0 1rem; }
   .contact-footer-line { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; gap: .25rem 0; min-height: 104px; padding: .8rem 1rem; }
   .contact-footer-line p, .contact-footer-line button, .contact-footer-line a { justify-self: center; }
