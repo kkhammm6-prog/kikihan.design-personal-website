@@ -58,8 +58,8 @@ export function HeaderResources() {
               {resource}
             </button>
             <div className="header-resource-menu" role="menu" aria-label={`${resource} language`}>
-              <button type="button" role="menuitem" onClick={() => openResource(resource, "zh")}>中文</button>
-              <button type="button" role="menuitem" onClick={() => openResource(resource, "en")}>English</button>
+              <button type="button" role="menuitem" onClick={() => openResource(resource, "zh")}>CN</button>
+              <button type="button" role="menuitem" onClick={() => openResource(resource, "en")}>EN</button>
             </div>
           </div>
         );
