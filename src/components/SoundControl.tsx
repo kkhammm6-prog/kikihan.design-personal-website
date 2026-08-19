@@ -95,7 +95,8 @@ export function SoundControl() {
         data-playing={isPlaying ? "true" : "false"}
         onClick={toggleSound}
       >
-        Sound
+        <span className="site-nav-label">Sound</span>
+        <img className="site-nav-icon" src="/icons/header/sound.svg" alt="" aria-hidden="true" />
         <span className="sound-note-layer" aria-hidden="true" />
       </button>
       <audio

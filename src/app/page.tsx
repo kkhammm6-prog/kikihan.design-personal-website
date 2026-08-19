@@ -15,8 +15,14 @@ export default function Home() {
             <HeaderResources />
           </div>
           <nav aria-label="Primary navigation">
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
+            <a href="#work" aria-label="Work">
+              <span className="site-nav-label">Work</span>
+              <img className="site-nav-icon" src="/icons/header/work.svg" alt="" aria-hidden="true" />
+            </a>
+            <a href="#contact" aria-label="Contact">
+              <span className="site-nav-label">Contact</span>
+              <img className="site-nav-icon" src="/icons/header/contact.svg" alt="" aria-hidden="true" />
+            </a>
             <SoundControl />
           </nav>
         </header>
